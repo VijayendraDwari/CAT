@@ -38,8 +38,8 @@ The Cyclic Attention Transformer incorporates:
 
 ## 📊 Performance Metrics for AG News and DB Pedia Datasets
 
-## Results on AG News dataset: The results obtained on the AG news dataset cosidering the fact that it's a non pretrained Transformer model seems to be acceptable.
-
+## Results on AG News dataset: 
+The results obtained on the AG news dataset cosidering the fact that it's a non pretrained Transformer model seems to be acceptable.
 
 | Metric    | Value  |
 |-----------|--------|
