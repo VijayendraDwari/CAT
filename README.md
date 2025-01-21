@@ -27,9 +27,19 @@ The Cyclic Attention Transformer incorporates:
 - batch_size: Training batch size (default: 128)
 - epochs: Number of training epochs (default: 5)
 
-## 📊 Performance Metrics
+## 🔬 Methodology
 
-Results on AG News dataset:
+- Tokenizer: A custom tokenizer supports both unigram and bigram tokenization.
+- Vocabulary: Built from scratch with a maximum size of 50,002, including padding and unknown tokens.
+- Attention Mechanisms:
+        Cyclic shifts for attention terms.
+        Gating to filter relevant attention outputs.
+- Optimization: Trained with the AdamW optimizer and a cross-entropy loss function.
+
+## 📊 Performance Metrics for AG News and DB Pedia Datasets
+
+## Results on AG News dataset: The results obtained on the AG news dataset cosidering the fact that it's a non pretrained Transformer model seems to be acceptable.
+
 
 | Metric    | Value  |
 |-----------|--------|
@@ -38,13 +48,57 @@ Results on AG News dataset:
 | Precision | 91.02% |
 | Recall    | 91.00% |
 
-## 📂 Dataset
+### Results on DBpedia Benchmark
 
-The implementation was evaluated on the AG News dataset:
+This repository also demonstrates the effectiveness of the Cyclic Attention Transformer architecture on the DBpedia benchmark dataset. Below are the results obtained:
+
+#### Training Configuration
+
+- **Dataset**: DBpedia 14
+- **Training Samples**: 560,000
+- **Testing Samples**: 70,000
+- **Vocabulary Size**: 50,002
+- **Batch Size**: 64
+- **Epochs**: 5
+- **Embedding Dimension**: 1024
+- **Number of Heads**: 8
+- **Feedforward Dimension**: 2048
+- **Number of Layers**: 3
+- **Optimizer**: AdamW
+- **Learning Rate**: 5e-5
+
+#### Training and Evaluation Metrics
+
+| Metric    | Value  |
+|-----------|--------|
+| Accuracy  | 98.05% |
+| F1 Score  | 98.05% |
+| Precision | 98.06% |
+| Recall    | 98.05% |
+
+#### Training Loss Progression
+
+| Epoch | Training Loss |
+|-------|---------------|
+| 1     | 0.1299        |
+| 2     | 0.0681        |
+| 3     | 0.0520        |
+| 4     | 0.0416        |
+| 5     | 0.0344        |
+
+## 📂 Datasets
+
+The implementation was evaluated on the AG News dataset with below details:
 
 - **Training Samples**: 120,000
 - **Classes**: 4 (World, Sports, Business, Sci/Tech)
 - **Dataset Split**: Standard AG News test set
+
+#### Key Observations
+
+- The model achieves a high accuracy of 98.05% on the DBpedia test set.
+- The Cyclic Attention Transformer showcases consistent training with a steadily decreasing loss over 5 epochs.
+- These results further demonstrate the architecture's capacity for handling diverse, multi-class text classification tasks.
 
 ## 🚀 Getting Started
 
