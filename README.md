@@ -86,14 +86,6 @@ This repository also demonstrates the effectiveness of the Cyclic Attention Tran
 | 4     | 0.0416        |
 | 5     | 0.0344        |
 
-## 📂 Datasets
-
-The implementation was evaluated on the AG News dataset with below details:
-
-- **Training Samples**: 120,000
-- **Classes**: 4 (World, Sports, Business, Sci/Tech)
-- **Dataset Split**: Standard AG News test set
-
 #### Key Observations
 
 - The model achieves a high accuracy of 98.05% on the DBpedia test set.
