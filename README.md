@@ -18,6 +18,14 @@ The Cyclic Attention Transformer incorporates:
 - **Hierarchical Multi-Head Attention**: Stacked layers of attention with intermediate normalization and feedforward networks
 - **Global Pooling**: Adaptive average pooling for sequence aggregation before classification
 - **Custom Tokenizer and Vocabulary**: Supports n-gram tokenization for enriched token representation
+  
+## Current Configuration
+- embed_dim: Dimension of embeddings (default: 1024)
+- num_heads: Number of attention heads (default: 8)
+- ff_dim: Dimension of feedforward layers (default: 2048)
+- num_layers: Number of transformer layers (default: 3)
+- batch_size: Training batch size (default: 128)
+- epochs: Number of training epochs (default: 5)
 
 ## 📊 Performance Metrics
 
