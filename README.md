@@ -139,10 +139,11 @@ Evaluation metrics
 
 Please refer to the notebooks in the repository.
 
-### 📝 Citation
+## 📝 Citation
 
 If you use this implementation in your research, please cite:
 
+```bibtex
 @misc{dwari2025cat,
   title={Cyclic Attention Transformer (CAT)},
   author={Vijayendra Dwari},
@@ -151,4 +152,3 @@ If you use this implementation in your research, please cite:
   journal={GitHub repository},
   howpublished={\url{https://github.com/VijayendraDwari/CAT}}
 }
-
