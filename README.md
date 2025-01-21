@@ -120,6 +120,29 @@ Clone the repository:
 git clone https://github.com/VijayendraDwari/CAT.git
 cd CAT
 ```
+Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+Run Jupiter Notebook:
+```bash
+jupyter notebook
+```
+📚 Documentation
+
+For detailed information about:
+
+Model architecture
+Training procedures
+Dataset preparation
+Evaluation metrics
+
+Please refer to the notebooks in the repository.
+
+### 📝 Citation
+
+If you use this implementation in your research, please cite:
+
 @misc{dwari2025cat,
   title={Cyclic Attention Transformer (CAT)},
   author={Vijayendra Dwari},
