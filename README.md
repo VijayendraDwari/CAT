@@ -8,7 +8,8 @@ This repository contains the implementation of a Cyclic Attention Transformer (C
 
 - **Cyclic Attention Mechanism**: Introduces attention that includes cyclic shifts and gating for better contextual modeling
 - **Non-Pretrained Model**: Designed as a non-pretrained transformer architecture, making it efficient for training from scratch
-- **Benchmark Performance**: Achieves 91.00% accuracy on the AG News dataset with a vocabulary size of 50,002 and 120,000 training samples
+- **Benchmark Performance on AG news Dataset**: Achieves 91.00% accuracy on the AG News dataset with a vocabulary size of 50,002 and 120,000 training samples
+- **Benchmark Performance on DBpedia Dataset**: Achieves 98.05% accuracy on the DBpedia dataset with a vocabulary size of 50,002 and 560,000 training samples
 
 ## 🧩 Model Architecture
 
