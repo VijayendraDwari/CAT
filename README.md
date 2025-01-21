@@ -53,3 +53,18 @@ The implementation was evaluated on the AG News dataset:
 ```bash
 git clone https://github.com/VijayendraDwari/CAT.git
 cd CAT
+```
+📝 Citation
+
+If you use this implementation in your research, please cite:
+
+@misc{dwari2025cat,
+  title={Cyclic Attention Transformer (CAT)},
+  author={Vijayendra Dwari},
+  year={2025},
+  publisher={GitHub},
+  journal={GitHub repository},
+  howpublished={\url{https://github.com/VijayendraDwari/CAT}}
+}
+
+
